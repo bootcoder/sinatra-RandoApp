@@ -1,0 +1,13 @@
+<h1>
+  LADYBUG NEW
+</h1>
+
+<%= erb :'partials/errors', layout: false %>
+
+<form action="/ladybugs" method="POST">
+  <input type="text" name="ladybug[name]"  placeholder="Name">
+  <input type="text" name="ladybug[color]" placeholder="Color">
+  <input type="text" name="ladybug[sex]" placeholder="Sex">
+  <input type="text" name="ladybug[age]" placeholder="Age">
+  <input type="submit" value="Create Ladybug!">
+</form>

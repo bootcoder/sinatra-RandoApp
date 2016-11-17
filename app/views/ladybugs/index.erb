@@ -1,0 +1,13 @@
+<h1>LADYBUGS INDEX</h1>
+
+<h3>You have <%= @ladybugs.length %> LadyBugs in your collection.</h3>
+
+<ul class="ladybug-container">
+  <% @ladybugs.each do |ladybug| %>
+    <li>
+      <h3>
+        <a href="/ladybugs/<%= ladybug.id %>"><%= ladybug.name %></a>
+      </h3>
+    </li>
+  <% end %>
+</ul>

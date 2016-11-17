@@ -1,0 +1,15 @@
+/** {
+  outline: 1px solid blue;
+}
+*/
+body {
+  margin: 2px;
+}
+
+
+.error-message {
+  background-color: yellow;
+  color: red;
+  font-size: 2em;
+}
+

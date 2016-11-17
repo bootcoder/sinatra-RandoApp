@@ -1,0 +1,19 @@
+<ul class="ladybug-show-container">
+  <li>
+    <h3>
+      <%= @ladybug.name %></a>
+    </h3>
+    <h4>
+      <%= @ladybug.age %>
+    </h4>
+    <p>
+      <%= @ladybug.sex %>
+      <%= @ladybug.color %>
+    </p>
+    <a href="/ladybugs/<%= @ladybug.id %>/edit">Edit</a>
+    <form action="/ladybugs/<%= @ladybug.id %>" method="POST">
+      <input type="hidden" value="DELETE" name="_method">
+      <input type="submit" value="SQaUSH">
+    </form>
+  </li>
+</ul>

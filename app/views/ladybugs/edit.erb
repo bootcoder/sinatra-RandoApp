@@ -1,0 +1,14 @@
+<h1>
+  LADYBUG Edit
+</h1>
+
+<%= erb :'partials/errors', layout: false %>
+
+<form action="/ladybugs/<%= @ladybug.id %>" method="POST">
+  <input type="hidden" value="PUT" name="_method">
+  <input type="text" name="ladybug[name]"  placeholder="Name" value="<%= @ladybug.name %>">
+  <input type="text" name="ladybug[color]" placeholder="Color" value="<%= @ladybug.color %>">
+  <input type="text" name="ladybug[sex]" placeholder="Sex" value="<%= @ladybug.sex %>">
+  <input type="text" name="ladybug[age]" placeholder="Age" value="<%= @ladybug.age %>">
+  <input type="submit" value="Create Ladybug!">
+</form>
