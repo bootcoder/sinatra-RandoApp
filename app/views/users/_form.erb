@@ -1,0 +1,11 @@
+<form action="/users" method="POST">
+  <label>Name:</label>
+  <input type="text" name="user[name]" value="<%= @user.try(:name) %>">
+  <label>Email:</label>
+  <input type="text" name="user[email]" value="<%= @user.try(:email) %>">
+  <label>Username:</label>
+  <input type="text" name="user[username]" value="<%= @user.try(:username) %>">
+  <label>Password:</label>
+  <input type="password" name="user[password]">
+  <input type="submit" value="Reigster NOW!">
+</form>

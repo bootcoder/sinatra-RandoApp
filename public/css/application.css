@@ -1,0 +1,8 @@
+.error-container {
+  background-color: yellow;
+}
+
+.error-text {
+  font-size: 2em;
+  color: blue;
+}
