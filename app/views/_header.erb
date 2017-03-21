@@ -1,4 +1,14 @@
 <header>
+
   <h1>Welcome to awesome sauce land. YAY!!!</h1>
-  <a href="/users/new">Register an account</a>
+  <% if logged_in? %>
+    Welcome Back <%= current_user.username %>
+    <form action="/sessions" method="POST">
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" value="Logout">
+    </form>
+  <% else %>
+    <%= erb :'sessions/new' %>
+    <a href="/users/new">Register an account</a>
+  <% end %>
 </header>
