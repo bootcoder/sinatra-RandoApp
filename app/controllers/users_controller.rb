@@ -1,4 +1,4 @@
 get '/users' do
-  @users = User.all
+  # @users = User.all
   erb :'users/index'
 end
